@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <style>
+    /* --- Basic Page Setup --- */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e9f1fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    /* --- Main Container --- */
+    .container {
+      background: white;
+      padding: 100px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 350px;
+      text-align: center;
+    }
+
+    /* --- Title --- */
+    h2 {
+      color: #2a6ec8;
+      margin-bottom: 200px;
+    }
+
+    /* --- Input Section --- */
+    .task-input {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .task-input input {
+      width: 65%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+    }
+
+    .add-btn {
+      background-color: #2a6ec8;
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .add-btn:hover {
+      background-color: #1c4f99;
+    }
+
+    /* --- Task List --- */
+    .task {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #f5f7fa;
+      border-radius: 8px;
+      padding: 8px 12px;
+      margin-bottom: 10px;
+    }
+
+    .task-name {
+      flex-grow: 1;
+      text-align: left;
+      margin-left: 10px;
+    }
+
+    .check {
+      color: green;
+      font-size: 18px;
+    }
+
+    .remove-btn {
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      padding: 6px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .remove-btn:hover {
+      background-color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Task Manager</h2>
+
+    <div class="task-input">
+      <input type="text" placeholder="What needs to be done?">
+      <button class="add-btn">Add Task</button>
+    </div>
+
+    <div class="task-list">
+      <div class="task">
+        <span class="check">✔</span>
+        <span class="task-name">Task A</span>
+        <button class="remove-btn">Remove</button>
+      </div>
+
+      <div class="task">
+        <span class="check">✔</span>
+        <span class="task-name">Task B</span>
+        <button class="remove-btn">Remove</button>
+      </div>
+
+      <div class="task">
+        <span class="check">✔</span>
+        <span class="task-name">Task C</span>
+        <button class="remove-btn">Remove</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

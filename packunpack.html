@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script>
+  // Function using rest parameters (...)
+  function addAll(...numbers) {
+    let sum = 0;
+    numbers.forEach(num => {
+      sum += num;
+    });
+    console.log("Sum is: " + sum);
+  }
+
+  // Function calls with different number of arguments
+  addAll(1,2,3,4,5,6,7,8,9,10);
+  addAll(1,2,3,4,5,6);
+  addAll(1,2,3,4,5,6,7,8);
+
+  // Using spread operator on a string
+  let name = 'Faisal';
+  let nameArray = [...name];
+  console.log(nameArray);
+</script>
+</body>
+</html>
